@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-image: url(./banner.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+nav {
+  height: 100px;
+}
+
+.nav-center {
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+}
+
+.nav-header {
+  display: none;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: teal;
+}
+
+/* fixed navbar */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding-top: 200px;
+}
+
+.color {
+  color: white;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: teal;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+span {
+  color: blue;
+}
+
+footer {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  color: blue;
+  width: 2rem;
+  height: 2rem;
+
+  visibility: hidden;
+}
+
+/* show link */
+.show-link {
+  visibility: visible;
+}
+
+@media (max-width: 800px) {
+  .nav-center {
+    background-color: blue;
+    height: 50px;
+  }
+
+  .nav-header {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+  }
+
+  .links-container {
+    display: none;
+  }
+
+  .show-links {
+    display: block;
+  }
+
+  .show-links .links {
+    display: block;
+    background-color: blue;
+  }
+}
